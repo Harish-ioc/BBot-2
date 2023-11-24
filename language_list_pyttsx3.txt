@@ -1,0 +1,163 @@
+English:
+
+Language Code: 'en'
+Example in Script: engine.setProperty('language', 'en')
+Spanish:
+
+Language Code: 'es'
+Example in Script: engine.setProperty('language', 'es')
+French:
+
+Language Code: 'fr'
+Example in Script: engine.setProperty('language', 'fr')
+German:
+
+Language Code: 'de'
+Example in Script: engine.setProperty('language', 'de')
+Italian:
+
+Language Code: 'it'
+Example in Script: engine.setProperty('language', 'it')
+Portuguese:
+
+Language Code: 'pt'
+Example in Script: engine.setProperty('language', 'pt')
+Russian:
+
+Language Code: 'ru'
+Example in Script: engine.setProperty('language', 'ru')
+Chinese:
+
+Language Code: 'zh'
+Example in Script: engine.setProperty('language', 'zh')
+Japanese:
+
+Language Code: 'ja'
+Example in Script: engine.setProperty('language', 'ja')
+Korean:
+
+Language Code: 'ko'
+Example in Script: engine.setProperty('language', 'ko')
+
+Language Code: 'nl'
+Example in Script: engine.setProperty('language', 'nl')
+Swedish:
+Language Code: 'sv'
+Example in Script: engine.setProperty('language', 'sv')
+Norwegian:
+Language Code: 'no'
+Example in Script: engine.setProperty('language', 'no')
+Danish:
+Language Code: 'da'
+Example in Script: engine.setProperty('language', 'da')
+Finnish:
+Language Code: 'fi'
+Example in Script: engine.setProperty('language', 'fi')
+Greek:
+Language Code: 'el'
+Example in Script: engine.setProperty('language', 'el')
+Turkish:
+Language Code: 'tr'
+Example in Script: engine.setProperty('language', 'tr')
+Arabic:
+Language Code: 'ar'
+Example in Script: engine.setProperty('language', 'ar')
+Hindi:
+Language Code: 'hi'
+Example in Script: engine.setProperty('language', 'hi')
+Hebrew:
+Language Code: 'he'
+Example in Script: engine.setProperty('language', 'he')
+
+Czech:
+Language Code: 'cs'
+Example in Script: engine.setProperty('language', 'cs')
+Polish:
+Language Code: 'pl'
+Example in Script: engine.setProperty('language', 'pl')
+Romanian:
+Language Code: 'ro'
+Example in Script: engine.setProperty('language', 'ro')
+Slovak:
+Language Code: 'sk'
+Example in Script: engine.setProperty('language', 'sk')
+Hungarian:
+Language Code: 'hu'
+Example in Script: engine.setProperty('language', 'hu')
+Bulgarian:
+Language Code: 'bg'
+Example in Script: engine.setProperty('language', 'bg')
+Indonesian:
+Language Code: 'id'
+Example in Script: engine.setProperty('language', 'id')
+Malay:
+Language Code: 'ms'
+Example in Script: engine.setProperty('language', 'ms')
+Thai:
+Language Code: 'th'
+Example in Script: engine.setProperty('language', 'th')
+Vietnamese:
+Language Code: 'vi'
+Example in Script: engine.setProperty('language', 'vi')
+
+Afrikaans:
+Language Code: 'af'
+Example in Script: engine.setProperty('language', 'af')
+Swahili:
+Language Code: 'sw'
+Example in Script: engine.setProperty('language', 'sw')
+Tagalog:
+Language Code: 'tl'
+Example in Script: engine.setProperty('language', 'tl')
+Maltese:
+Language Code: 'mt'
+Example in Script: engine.setProperty('language', 'mt')
+Latvian:
+Language Code: 'lv'
+Example in Script: engine.setProperty('language', 'lv')
+Lithuanian:
+Language Code: 'lt'
+Example in Script: engine.setProperty('language', 'lt')
+Estonian:
+Language Code: 'et'
+Example in Script: engine.setProperty('language', 'et')
+Albanian:
+Language Code: 'sq'
+Example in Script: engine.setProperty('language', 'sq')
+Slovenian:
+Language Code: 'sl'
+Example in Script: engine.setProperty('language', 'sl')
+Macedonian:
+Language Code: 'mk'
+Example in Script: engine.setProperty('language', 'mk')
+
+Croatian:
+Language Code: 'hr'
+Example in Script: engine.setProperty('language', 'hr')
+Serbian:
+Language Code: 'sr'
+Example in Script: engine.setProperty('language', 'sr')
+Bosnian:
+Language Code: 'bs'
+Example in Script: engine.setProperty('language', 'bs')
+Montenegrin:
+Language Code: 'me'
+Example in Script: engine.setProperty('language', 'me')
+Luxembourgish:
+Language Code: 'lb'
+Example in Script: engine.setProperty('language', 'lb')
+Basque:
+Language Code: 'eu'
+Example in Script: engine.setProperty('language', 'eu')
+Catalan:
+Language Code: 'ca'
+Example in Script: engine.setProperty('language', 'ca')
+Galician:
+Language Code: 'gl'
+Example in Script: engine.setProperty('language', 'gl')
+Welsh:
+Language Code: 'cy'
+Example in Script: engine.setProperty('language', 'cy')
+Icelandic:
+Language Code: 'is'
+Example in Script: engine.setProperty('language', 'is')
