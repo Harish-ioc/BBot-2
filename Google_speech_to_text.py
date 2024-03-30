@@ -1,22 +1,24 @@
-
 import speech_recognition as sr
 
-recognizer = sr.Recognizer()
+def speech_to_text():
+    recognizer = sr.Recognizer()
 
-while True:
-     try:
-          
-          with sr.Microphone() as mic :
-               print("say...")
-               recognizer.adjust_for_ambient_noise(mic, duration=0.1)
-               audio = recognizer.listen(mic)
-            
+    while True:
+        try:
+            with sr.Microphone() as mic:
+                print("Say...")
+                recognizer.adjust_for_ambient_noise(mic, duration=0.1)
+                audio = recognizer.listen(mic)
 
-               text = recognizer.recognize_google(audio)
-               text = text.lower()
+                text = recognizer.recognize_google(audio)
+                text = text.lower()
 
-               print(f"Recognized {text}")
+                print(f"Recognized: {text}")
+                return text
 
-     except : #sr.UnknownValueErrror()
-        recognizer = sr.Recognizer()
-        continue
+        except sr.UnknownValueError:
+            print("Could not understand audio. Please try again.")
+            continue
+
+if __name__=="__main__":
+    speech_to_text()
