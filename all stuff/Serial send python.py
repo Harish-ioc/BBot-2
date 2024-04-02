@@ -17,37 +17,41 @@ def read():
     data=arduino.readline().decode()
     return data
 
-while True:
-    text = input("Enter a string: ")
-    value = write_read(text) 
+
+if __name__=="__main__":
+    print("")
+
+
+# while True:
+#     text = input("Enter a string: ")
+#     value = write_read(text) 
     
-    
-"""
-1=happy
-2=wink
-3=anger
-"""
+# """
+# 1=happy
+# 2=wink
+# 3=anger
+# """
 
 
-"""
-# Associated Arduino Code
+# """
+# # Associated Arduino Code
 
-String message;
+# String message;
 
-void setup() {
-  Serial.begin(115200);
-  Serial.setTimeout(1);
-}
+# void setup() {
+#   Serial.begin(115200);
+#   Serial.setTimeout(1);
+# }
 
-void loop() {
-  while (!Serial.available());
-  message = Serial.readStringUntil('\n'); // Read string until newline character
-  message.trim(); // Remove potential whitespace
+# void loop() {
+#   while (!Serial.available());
+#   message = Serial.readStringUntil('\n'); // Read string until newline character
+#   message.trim(); // Remove potential whitespace
 
-  // Perform some operation on the received string (example: convert to uppercase)
-  message.toUpperCase();
+#   // Perform some operation on the received string (example: convert to uppercase)
+#   message.toUpperCase();
 
-  Serial.println(message); // Send back the modified string
-}
+#   Serial.println(message); // Send back the modified string
+# }
 
-"""
+# """

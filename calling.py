@@ -32,7 +32,7 @@ ngrok http 11434
 
 import requests
 
-url = "https://dfb7-223-190-244-97.ngrok-free.app/api/generate"
+url = "https://64b2-2409-4052-4e01-9b0c-9c5-5486-6dc0-1b18.ngrok-free.app/api/generate"
 
 def ask(txt):
 
@@ -57,6 +57,7 @@ def ask(txt):
         print(response.text)  # Print the response content for debugging purposes
 
 if __name__=="__main__":
+    print(ask("how are you today"))
     print("")
     # while True:
     #     a=input(" : ")

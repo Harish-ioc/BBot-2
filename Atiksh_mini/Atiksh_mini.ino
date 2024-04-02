@@ -408,8 +408,8 @@ void left(int Lspeed,int Rspeed){
   analogWrite(Lf,0);
 }
 
-void stop(int Lspeed,int Rspeed){
-  speed(Lspeed,Rspeed);
+void stop(){
+//  speed(Lspeed,Rspeed);/
   analogWrite(Lf,0);
   analogWrite(Rb,0);
   analogWrite(Rf,0);
@@ -516,6 +516,7 @@ void setup(){
 Serial.setTimeout(1);
 
 }
+
 void test(){
   lc.setLed(0,0,0,t);lc.setLed(1,0,0,t);lc.setLed(2,0,0,t);lc.setLed(3,0,0,t);
   lc.setLed(4,0,0,t);lc.setLed(5,0,0,t);lc.setLed(6,0,0,t);lc.setLed(7,0,0,t);
@@ -551,26 +552,29 @@ float limit_hit=5.2;
 int test_var=0;
 
 void loop(){  
-  /* 1=happy 2=wink 3=anger */
-//------------------------------------------------------------------------------------------------------------------------
-//  sensors_event_t a, g, temp;
-//  mpu.getEvent(&a, &g, &temp);
-//
-//  avg_hit=((a.acceleration.x)+(a.acceleration.y)+(a.acceleration.z))/3;
-//  Serial.println(avg_hit);
-//  if(avg_hit>=limit_hit){
-//    surprised(1000);
-//    angry();
-//    } 
 
-//  if(Serial.available()>0){   
-//    while (!Serial.available());
-//    command = Serial.readStringUntil('\n'); 
-//    command.trim();   // Command String is containing All command values
-//    Serial.println(command);
-//  }
-//----------------------------------------------------------------------------------------------------------------------------
-  int blink_speed=5;
+   if (Serial.available() > 0) {
+        char e = Serial.read();
+        Serial.print("Received character: ");
+        Serial.println(e);
+          if(e == 'F'){
+          forward();
+          }
+          else if(e == 'B'){
+          backward();
+          }
+          else if(e == 'R'){
+          right();
+          }
+          else if(e == 'L'){
+          left();
+          }
+          else {
+          stop();
+        }
+    }
+  
+ int blink_speed=5;
   if (count == randomNumber) {
     // Serial.println("Value Changed");
 
@@ -617,8 +621,28 @@ void loop(){
     glow_m(1,7,2,6,t); glow_m(2,7,1,5,t); // L7
 
     count++; 
-  }
+  }}
 
+
+//------------------------------------------------------------------------------------------------------------------------
+//  sensors_event_t a, g, temp;
+//  mpu.getEvent(&a, &g, &temp);
+//
+//  avg_hit=((a.acceleration.x)+(a.acceleration.y)+(a.acceleration.z))/3;
+//  Serial.println(avg_hit);
+//  if(avg_hit>=limit_hit){
+//    surprised(1000);
+//    angry();
+//    } 
+
+//  if(Serial.available()>0){   
+//    while (!Serial.available());
+//    command = Serial.readStringUntil('\n'); 
+//    command.trim();   // Command String is containing All command values
+//    Serial.println(command);
+//  }
+//----------------------------------------------------------------------------------------------------------------------------
+ 
 //  right(500,/500);
 //  all();
 //  wink();
@@ -626,6 +650,3 @@ void loop(){
 
 //   forward(1000,1000);
   
-
-
-}
